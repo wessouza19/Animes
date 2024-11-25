@@ -1,3 +1,4 @@
+import 'package:anime_dragonballz/screens/presentation_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -38,14 +39,26 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontWeight: FontWeight.bold,
               ),
             ),
+            TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return const PresentationScreen();
+                  }));
+                },
+                child: const Text("Abrir tela de apresentação")),
             Stack(
               children: [
                 Image.asset('assets/images/DragonBall1.png'),
-                AnimatedOpacity(
-                    duration: const Duration(milliseconds: 1500),
-                    opacity: opacityImage,
-                    curve: Curves.fastOutSlowIn,
-                    child: Image.asset('assets/images/DragonBall2.png')),
+                Column(
+                  children: [
+                    SizedBox(height: 200.0),
+                    AnimatedOpacity(
+                        duration: const Duration(milliseconds: 1000),
+                        opacity: opacityImage,
+                        curve: Curves.easeIn,
+                        child: Image.asset('assets/images/DragonBall2.png')),
+                  ],
+                )
               ],
             )
           ],

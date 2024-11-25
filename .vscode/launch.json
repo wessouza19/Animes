@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "anime_dragonballz",
+            "cwd": "anime_dragonballz",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "anime_dragonballz (profile mode)",
+            "cwd": "anime_dragonballz",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "anime_dragonballz (release mode)",
+            "cwd": "anime_dragonballz",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
